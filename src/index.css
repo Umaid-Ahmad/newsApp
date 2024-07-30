@@ -29,69 +29,6 @@ body {
   position: relative;
 }
 
-/* Header */
-/* *************************************** */
-
-header {
-  height: 20vh;
-  border-radius: 100rem;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.9),
-      rgba(114, 78, 78, 0.849)
-    ),
-    url(../public/img/31818246_7758975.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  outline: 0.5rem solid rgb(206, 106, 106);
-}
-
-/* Header Input Section */
-/* *************************************** */
-
-header input {
-  padding: 1rem;
-  width: 30%;
-  border-radius: 3rem;
-  outline: 0.5rem solid white;
-  background-color: whitesmoke;
-  transition: all 0.2s;
-  transition-timing-function: ease-in;
-}
-
-header input:hover {
-  outline-offset: 1rem;
-}
-
-/* Header Button */
-/* *************************************** */
-
-header button {
-  padding: 1rem 2rem;
-  font-weight: 600;
-  background-color: rgb(206, 106, 106);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4rem;
-}
-
-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 1px 3pc black;
-  background-color: #fff;
-  color: rgb(206, 106, 106);
-}
-
-button:active {
-  transform: translateY(1.5px);
-  box-shadow: none;
-}
-
 div.appContainer p.error {
   position: absolute;
   top: 60%;
@@ -113,9 +50,7 @@ div.appContainer p.error {
   );
   text-align: center;
 }
-/* ========================================================================= */
-/* Un-ordered List (Container) */
-/* *************************************** */
+
 ul {
   list-style: none;
   margin-top: 5rem;
@@ -123,112 +58,4 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10rem;
-}
-
-/* ========================================================================= */
-/*  List (Article Container) */
-/* *************************************** */
-li.container {
-  width: calc((100vw - (4 * 10rem)) / 3);
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0.2px 0.2px 10px rgba(0, 0, 0, 0.623);
-}
-
-li.container article.card div.preview {
-  width: 95%;
-  height: 20rem;
-  overflow: hidden;
-  margin: auto;
-  outline: solid 0.5rem rgba(206, 106, 106, 0.596);
-  border-radius: 0.5rem;
-}
-
-li.container article.card div.preview img {
-  height: 100%;
-  width: 100%;
-
-  /* object-fit: cover; */
-  /* object-position: center; */
-}
-
-li.container article.card div.content {
-  margin: 1.5rem;
-}
-
-li.container article.card div.content div.reference {
-  width: 100%;
-  margin-block: 3rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-li.container article.card div.content div.reference h4 {
-  font-size: 90%;
-  /* text-align: center; */
-  padding: 0.5rem;
-  outline: 0.2rem solid rgba(206, 106, 106, 0.774);
-  border-radius: 4rem;
-}
-
-li.container article.card div.content div.reference h4 span {
-  color: rgba(206, 106, 106, 0.774);
-  font-size: 1rem;
-}
-
-li.container article.card div.content div.card__content h3 {
-  color: rgba(206, 106, 106, 0.8);
-  margin-block-end: 1rem;
-  height: 3rem;
-  line-height: 1.5rem;
-  overflow: hidden;
-}
-
-li.container article.card div.content div.card__content p {
-  height: 5rem;
-  text-wrap: wrap;
-  overflow-y: hidden;
-  /* text-wrap: wrap; */
-  line-height: 1.5rem;
-  margin-block-end: 2rem;
-}
-
-/* List (link to article Detail) */
-/* *************************************** */
-
-li.container article.card div.content div.card__content a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-decoration: none;
-  transition: all 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-li.container article.card div.content div.card__content a:active,
-li.container article.card div.content div.card__content a:visited {
-  color: blueviolet;
-}
-
-li.container article.card div.content div.card__content a:hover {
-  color: rgba(206, 106, 106, 0.8);
-  /* font-size: 1.3rem; */
-}
-
-/* Media Queries */
-/* @media (max-width: 768px) {
-  li.container {
-    width: calc(100vw - (2 * 10rem));
-  }
-} */
-@media (max-width: 1023px) {
-  li.container {
-    width: calc(100vw - (2 * 10rem));
-  }
-  li.container article.card div.content div.reference h4 {
-    text-align: center;
-    font-size: 1rem;
-  }
 }

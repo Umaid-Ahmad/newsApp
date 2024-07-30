@@ -1,3 +1,4 @@
+import "./NewsArticle.css";
 const defaultImage =
   "https://png.pngtree.com/png-clipart/20190925/original/pngtree-no-image-vector-illustration-isolated-png-image_4979075.jpg";
 
@@ -5,7 +6,7 @@ function NewsArticle({ articleObj }) {
   const publishedDate = articleObj.publishedAt.slice(0, 10); // To extract the date from PublishedAt (property)
 
   return (
-    <li className={`container ${articleObj.author ? "" : "removed"}`}>
+    <li className="container">
       <article className="card">
         <div className="preview">
           <img

@@ -1,3 +1,4 @@
+import "./Header.css";
 function Header(props) {
   const { value, onChange, onSubmit } = props;
   return (
